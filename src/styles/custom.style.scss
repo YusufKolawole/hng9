@@ -1,0 +1,58 @@
+@import "./helpers";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+.app {
+  font-family: "Inter", sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  header {
+    position: relative;
+    padding-top: 3rem;
+    .btn_share {
+      position: absolute;
+      top: 10%;
+      right: 16.67%;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+
+  main {
+    .main-icons {
+      width: 24px;
+      height: 24px;
+    }
+    a {
+      font-weight: 500;
+      font-size: 14px;
+      color: #101828;
+      text-decoration: none;
+    }
+  }
+
+  footer {
+    border-top: 1px solid #eaecf0;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    .footer-inner {
+      .footer-brand {
+        width: 120px;
+      }
+      .footer-text {
+        margin: 1rem 0;
+        color: #667085;
+        font-weight: 400;
+      }
+
+      @media screen and (min-width: 992px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
